@@ -1,8 +1,8 @@
 Small bias and large variance results in more accurate model regards to fitting the training dataset, but this kind of model tends to overfit the training dataset.
 Large bias and mall variance results in less accurate model, but this kind of model is more stable when we try different datasets.
-If the result our model produced is very unaccurate, then the bias might be too big.
+If the result our model produced is very inaccurate, then the bias might be too big.
 If the result seems to be only accurate on some specific dataset, then the variance might be too big.
-Regularization tweeks the weight of each predictor in order to make a good prediction of unseen data set. How to tweek the predictor is based on a parameter "alpha".
-In LASSO regression in (1), the code first try all the predictors, and find that this is too many, some of them are not really related to "Salary". This model is overfitting, and it has low bias and high variance.
+Regularization tweeks the weight of each predictor in order to make a good prediction of unseen dataset. How to tweek the predictor is based on a parameter "alpha".
+In LASSO regression, the code first try all the predictors, and find that this is too many, some of them are not really related to "Salary". This model is overfitting, it has low bias and high variance.
 When "alpha" is large, the amount of predictors decreases. When the predictors are too less, the model will produce similar inaccurate results on different datasets. This is underfitting, the model has high bias and low variance.
-After doing cross validation, the amount of predictors becomes 14. The bias increases and the variance decreases.
+After doing cross validation, the amount of predictors becomes 14. This bias and the variance will give us the best result.
